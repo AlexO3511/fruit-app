@@ -37,7 +37,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.urlencoded({ extended: true }));
-app.use('/fruits', require('./controllers/fruitsController.js'));
+app.use('/fruits', require('./controllers/fruitscontroller.js'));
 app.use("/users",verifyToken, require("./controllers/usersController.js"));
 app.use("/auth", require("./controllers/authController.js"));
 
